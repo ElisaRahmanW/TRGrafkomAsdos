@@ -4207,6 +4207,162 @@ glBegin(GL_POLYGON);
         a1a+=(-25);
         a2a+=(-25);
     }
+	
+//Permukaan dan tangga==============================================================================================================
+    //tanah
+    glBegin(GL_POLYGON);
+    glColor3f(0.3,0.0,0.0);
+    glVertex3f(-400,-80,-70);
+    glVertex3f(-400,-80,175);
+    glVertex3f(400,-80,175);
+    glVertex3f(400,-80,-70);
+    glEnd();
+
+    //tanjakan tangga kiri
+    glBegin(GL_POLYGON);
+    glColor3f(0.8,0.8,0.8);
+    glVertex3f(-60,-50,70);
+    glVertex3f(-60,-50,105);
+    glVertex3f(-100,-80,105);
+    glVertex3f(-100,-80,70);
+    glEnd();
+
+    //tutup tanjakan kiri
+    glBegin(GL_POLYGON);
+    glColor3f(0.7,0.0,0.0);
+    glVertex3f(-105,-80,105);
+    glVertex3f(-60,-80,105);
+    glVertex3f(-60,-45,105);
+    glEnd();
+
+    //Tanjakan lantai kanan
+    glBegin(GL_POLYGON);
+    glColor3f(0.8,0.8,0.8);
+    glVertex3f(60,-50,70);
+    glVertex3f(60,-50,105);
+    glVertex3f(100,-80,105);
+    glVertex3f(100,-80,70);
+    glEnd();
+
+    //tutup lantai kanan
+    glBegin(GL_POLYGON);
+    glColor3f(0.7,0.0,0.0);
+    glVertex3f(105,-80,105);
+    glVertex3f(60,-80,105);
+    glVertex3f(60,-45,105);
+    glEnd();
+
+    //tutup lantai depan kiri
+    glBegin(GL_POLYGON);
+    glColor3f(0.7,0.0,0.0);
+    glVertex3f(-60,-60,118);
+    glVertex3f(-60,-60,131);
+    glVertex3f(-60,-80,131);
+    glVertex3f(-60,-80,118);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.7,0.0,0.0);
+    glVertex3f(-60,-80,105);
+    glVertex3f(-60,-80,118);
+    glVertex3f(-60,-60,118);
+    glVertex3f(-60,-45,105);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.7,0.0,0.0);
+    glVertex3f(-60,-80,131);
+    glVertex3f(-60,-80,150);
+    glVertex3f(-60,-60,131);
+    glEnd();
+
+    //tutup lantai depan kanan
+    glBegin(GL_POLYGON);
+    glColor3f(0.7,0.0,0.0);
+    glVertex3f(60,-60,118);
+    glVertex3f(60,-60,131);
+    glVertex3f(60,-80,131);
+    glVertex3f(60,-80,118);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.7,0.0,0.0);
+    glVertex3f(60,-80,105);
+    glVertex3f(60,-80,118);
+    glVertex3f(60,-60,118);
+    glVertex3f(60,-45,105);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.7,0.0,0.0);
+    glVertex3f(60,-80,131);
+    glVertex3f(60,-80,150);
+    glVertex3f(60,-60,131);
+    glEnd();
+
+    //Tangga depan
+    float ty1=-80, ty2=-78, z=145;
+    for(int i = 1; i<= 8; i++)
+    {
+        glBegin(GL_POLYGON);
+        glColor3f(1.0,1.0,1.0);
+        glVertex3f(-60,ty1,z);
+        glVertex3f(-60,ty2,z);
+        glVertex3f(60,ty2,z);
+        glVertex3f(60,ty1,z);
+        glEnd();
+
+        glBegin(GL_POLYGON);
+        glColor3f(0.8,0.8,0.8);
+        glVertex3f(-60,ty2,z);
+        glVertex3f(-60,ty2,z-2);
+        glVertex3f(60,ty2,z-2);
+        glVertex3f(60,ty2,z);
+        glEnd();
+
+        ty1+= 2;
+        ty2+=2;
+        z-=2;
+    }
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.8,0.8,0.8);
+    glVertex3f(-60,ty2-2,z);
+    glVertex3f(-60,ty2-2,z-12);
+    glVertex3f(60,ty2-2,z-12);
+    glVertex3f(60,ty2-2,z);
+    glEnd();
+
+    for(int i =1; i<=7; i++)
+    {
+        glBegin(GL_POLYGON);
+        glColor3f(1.0,1.0,1.0);
+        glVertex3f(-60,ty1,z-12);
+        glVertex3f(-60,ty2,z-12);
+        glVertex3f(60,ty2,z-12);
+        glVertex3f(60,ty1,z-12);
+        glEnd();
+
+        glBegin(GL_POLYGON);
+        glColor3f(0.8,0.8,0.8);
+        glVertex3f(-60,ty2,z-12);
+        glVertex3f(-60,ty2,z-14);
+        glVertex3f(60,ty2,z-14);
+        glVertex3f(60,ty2,z-12);
+        glEnd();
+
+        ty1+= 2;
+        ty2+=2;
+        z-=2;
+    }
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.8,0.8,0.8);
+    glVertex3f(-60,ty2-2,z-12);
+    glVertex3f(-60,ty2-2,z-70);
+    glVertex3f(60,ty2-2,z-70);
+    glVertex3f(60,ty2-2,z-12);
+    glEnd();
 
 
 	glPopMatrix();
