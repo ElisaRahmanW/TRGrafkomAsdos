@@ -1,0 +1,189 @@
+#include<windows.h>
+#include<gl/glut.h>
+#include <math.h>
+#include <stdio.h>
+
+
+void init(void);
+void tampil(void);
+void keyboard(unsigned char, int, int);
+void mouse(int button, int state, int x, int y);
+void ukuran(int, int);
+void mouseMotion(int x, int y);
+
+
+float xrot =0.f;
+float yrot = 0.f;
+float xdiff = 0.f;
+float ydiff = 0.f;
+bool mouseDown = false;
+int is_depth;
+
+int main (int argc, char **argv)
+{
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+	glutInitWindowSize(800, 600);
+	glutInitWindowPosition(250, 50);
+	glutCreateWindow("TR_GRAFKOM_J_9");
+	init();
+	glutDisplayFunc(tampil);
+	glutKeyboardFunc(keyboard);
+
+	glutMouseFunc(mouse);
+	glutMotionFunc(mouseMotion);
+
+	glutReshapeFunc(ukuran);
+	glutDisplayFunc(tampil);
+	glutMainLoop();
+	return 0;
+}
+
+void init(void)
+{
+	glClearColor(0,0,0,0);
+	glMatrixMode(GL_PROJECTION);
+	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_LIGHTING);
+  glEnable(GL_COLOR_MATERIAL);
+  glEnable(GL_LIGHT0);
+
+	is_depth=1;
+	glMatrixMode(GL_MODELVIEW);
+	glPointSize(3.5);
+	glLineWidth(1);
+}
+
+
+void tampil(void)
+{
+	glPushMatrix();
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	gluLookAt(0,0,3,0,0,0,0,1,0);
+	glRotatef(xrot, 1, 0,0);
+	glRotatef(yrot, 0,1,0);
+
+//ELISA RAHMAN WIJAYA - 672018248
+
+
+//HOLBED JOSHUA PETTY - 672018260
+
+
+	glPopMatrix();
+	glutSwapBuffers();
+}
+
+void keyboard (unsigned char key, int x, int y)
+{
+	switch (key)
+	{
+		//maju
+		case 'w':
+		case 'W':
+			glTranslatef(0,0,3);
+			break;
+		//mundur
+		case 's':
+		case 'S':
+			glTranslatef(0,0,-3);
+			break;
+		//kanan
+		case 'd':
+		case 'D':
+			glTranslatef(3,0,0);
+			break;
+		//kiri
+		case 'a':
+		case 'A':
+			glTranslatef(-3,0,0);
+			break;
+		//naik
+		case '7':
+			glTranslatef(0,3,0);
+			break;
+		//turun
+		case '9':
+			glTranslatef(0,-3,0);
+			break;
+		//memutar maju naik
+		case '2':
+			glRotatef(2,1,0,0);
+			break;
+		//memutar maju turun
+		case '8':
+			glRotatef(-2,1,0,0);
+			break;
+		//memutar maju kanan
+		case '6':
+			glRotatef(2,0,1,0);
+			break;
+		//memutar maju kiri
+		case '4':
+			glRotatef(-2,0,1,0);
+			break;
+		//memutar kiri ditempat
+		case '1':
+			glRotatef(2,0,0,1);
+			break;
+		//	memutar kanan ditempat
+		case '3':
+			glRotatef(-2,0,0,1);
+			break;
+		//lihat bagian dalam
+		case '5':
+			if(is_depth)
+			{
+				is_depth = 0;
+				glDisable(GL_DEPTH_TEST);
+			}
+			else
+			{
+				is_depth = 1;
+				glEnable(GL_DEPTH_TEST);
+			}
+	}
+	tampil();
+}
+
+void idle()
+{
+	if (!mouseDown)
+	{
+		xrot += 0.3;
+		yrot += 0.4;
+	}
+	glutPostRedisplay();
+}
+
+void mouse(int button, int state, int x, int y)
+{
+	if(button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
+	{
+		mouseDown = true;
+		xdiff = x - yrot;
+		ydiff = -y + xrot;
+	}
+	else
+	mouseDown = false;
+}
+
+void mouseMotion(int x, int y)
+{
+	if(mouseDown)
+	{
+		yrot = x - xdiff;
+		xrot = y + ydiff;
+
+		glutPostRedisplay();
+	}
+}
+
+void ukuran(int lebar, int tinggi)
+{
+	if (tinggi ==0) tinggi =1;
+glMatrixMode(GL_PROJECTION);
+glLoadIdentity();
+gluPerspective(50,lebar/tinggi, 5, 1000);
+glTranslatef(0,0,-200);
+glMatrixMode(GL_MODELVIEW);
