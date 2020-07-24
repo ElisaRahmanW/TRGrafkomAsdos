@@ -202,7 +202,49 @@ void tampil(void)
    glVertex3f(75,60,-50);
    glEnd();
 	
-	
+//****************************************************************************************************************************************
+//****************************************************************************************************************************************
+//KANAN ABU" ATAS
+//KANAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.85,0.85,0.85);
+   glVertex3f(100,50,50);
+   glVertex3f(100,50,70);
+   glVertex3f(100,-50,70);
+   glVertex3f(100,-50,50);
+   glEnd();
+//DEPAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.82,0.82,0.82);
+   glVertex3f(100,50,70);
+   glVertex3f(60,50,70);
+   glVertex3f(60,-50,70);
+   glVertex3f(100,-50,70);
+   glEnd();
+//KIRI
+   glBegin(GL_POLYGON);
+   glColor3f(0.65,0.65,0.65);
+   glVertex3f(60,50,70);
+   glVertex3f(60,-50,70);
+   glVertex3f(60,-50,50);
+   glVertex3f(60,50,50);
+   glEnd();
+//ATAS
+   glBegin(GL_POLYGON);
+   glColor3f(1,1,1);
+   glVertex3f(60,50,75);
+   glVertex3f(60,50,50);
+   glVertex3f(105,50,50);
+   glVertex3f(105,50,75);
+   glEnd();
+//BAWAH
+   glBegin(GL_POLYGON);
+   glColor3f(0,0,1);
+   glVertex3f(60,-50,70);
+   glVertex3f(60,-50,50);
+   glVertex3f(100,-50,50);
+   glVertex3f(100,-50,70);
+   glEnd();
 	
 	
 	
