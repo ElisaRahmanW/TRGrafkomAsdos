@@ -144,6 +144,68 @@ void tampil(void)
    glVertex3f(-100,-80,-50);
    glVertex3f(-100,-50,-50);
    glEnd();
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//KENTENG
+//****************************************************************************************************************************************
+//KANAN KIRI
+   glBegin(GL_POLYGON);
+   glColor3f(0.35,0,0);
+   glVertex3f(60,50,75);
+   glVertex3f(60,50,50);
+   glVertex3f(75,60,50);
+   glEnd();
+//KANAN DEPAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.35,0,0);
+   glVertex3f(60,50,75);
+   glVertex3f(75,60,50);
+   glVertex3f(105,50,75);
+   glEnd();
+//KANAN KANAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.35,0,0);
+   glVertex3f(75,60,50);
+   glVertex3f(75,60,-50);
+   glVertex3f(105,50,-75);
+   glVertex3f(105,50,75);
+   glEnd();
+
+//KIRI KANAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.35,0,0);
+   glVertex3f(-60,50,75);
+   glVertex3f(-60,50,50);
+   glVertex3f(-75,60,50);
+   glEnd();
+//KIRI DEPAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.35,0,0);
+   glVertex3f(-60,50,75);
+   glVertex3f(-75,60,50);
+   glVertex3f(-105,50,75);
+   glEnd();
+//KIRI KIRI
+   glBegin(GL_POLYGON);
+   glColor3f(0.35,0,0);
+   glVertex3f(-75,60,50);
+   glVertex3f(-75,60,-50);
+   glVertex3f(-105,50,-75);
+   glVertex3f(-105,50,75);
+   glEnd();
+
+//BELAKANG
+   glBegin(GL_POLYGON);
+   glColor3f(0.35,0,0);
+   glVertex3f(-75,60,-50);
+   glVertex3f(-105,50,-75);
+   glVertex3f(105,50,-75);
+   glVertex3f(75,60,-50);
+   glEnd();
+	
+	
+	
+	
+	
 
 //HOLBED JOSHUA PETTY - 672018260
 
