@@ -455,6 +455,63 @@ void tampil(void)
    glVertex3f(100.15,-40,62);
    glVertex3f(100.15,-20,62);
    glEnd();
+
+//****************************************************************************************************************************************
+//****************************************************************************************************************************************
+//KANAN BAWAH (MERAH)
+//KANAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(100,-50,70);
+   glVertex3f(100,-50,50);
+   glVertex3f(100,-80,50);
+   glVertex3f(100,-80,70);
+   glEnd();
+//DEPAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(60,-50,70);
+   glVertex3f(100,-50,70);
+   glVertex3f(100,-80,70);
+   glVertex3f(60,-80,70);
+   glEnd();
+//KIRI
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(60,-50,70);
+   glVertex3f(60,-50,50);
+   glVertex3f(60,-80,50);
+   glVertex3f(60,-80,70);
+   glEnd();
+
+//****************************************************************************************************************************************
+//****************************************************************************************************************************************
+//KANAN BAWAH (MERAH) (BELAKANG)
+//KANAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(100,-50,-70);
+   glVertex3f(100,-50,-50);
+   glVertex3f(100,-80,-50);
+   glVertex3f(100,-80,-70);
+   glEnd();
+//DEPAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(60,-50,-70);
+   glVertex3f(100,-50,-70);
+   glVertex3f(100,-80,-70);
+   glVertex3f(60,-80,-70);
+   glEnd();
+//KIRI
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(60,-50,-70);
+   glVertex3f(60,-50,-50);
+   glVertex3f(60,-80,-50);
+   glVertex3f(60,-80,-70);
+   glEnd();
+	
 	
 	
 	
