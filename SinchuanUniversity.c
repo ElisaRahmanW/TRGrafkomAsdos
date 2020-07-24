@@ -65,7 +65,85 @@ void tampil(void)
 	glRotatef(yrot, 0,1,0);
 
 //ELISA RAHMAN WIJAYA - 672018248
+//########################################################################################################################################
+//PONDASI
+//########################################################################################################################################
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//AWALAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.75,0.75,0.75);
+//BAWAH
+   glVertex3f(-100,-50,50);
+   glVertex3f(100,-50,50);
+   glVertex3f(100,-50,-50);
+   glVertex3f(-100,-50,-50);
+   glVertex3f(-100,-50,50);
+//DEPAN
+   glVertex3f(-100,50,50);
+   glVertex3f(100,50,50);
+    glVertex3f(100,-50,50);
+   glVertex3f(-100,-50,50);
+    glVertex3f(-100,50,50);
+//KIRI
+   glVertex3f(-100,50,-50);
+   glVertex3f(-100,-50,-50);
+   glVertex3f(-100,-50,50);
+   glVertex3f(-100,50,50);
+   glEnd();
 
+   glBegin(GL_POLYGON);
+   glColor3f(0.85,0.85,0.85);
+//ATAS
+   glVertex3f(105,50,-50);
+   glVertex3f(-100,50,-50);
+   glVertex3f(-100,50,50);
+   glVertex3f(105,50,50);
+   glVertex3f(105,50,-50);
+//BELAKANG
+   glVertex3f(100,-50,-50);
+   glVertex3f(-100,-50,-50);
+   glVertex3f(-100,50,-50);
+   glVertex3f(100,50,-50);
+   glVertex3f(100,-50,-50);
+//KANAN
+   glVertex3f(100,-50,50);
+   glVertex3f(100,50,50);
+   glVertex3f(100,50,-50);
+   glEnd();
+
+//BAWAH TENGAH
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(60,-50,50);
+   glVertex3f(60,-80,50);
+   glVertex3f(-60,-80,50);
+   glVertex3f(-60,-50,50);
+   glEnd();
+
+//BAWAH KANAN
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(100,-50,50);
+   glVertex3f(100,-80,50);
+   glVertex3f(100,-80,-50);
+   glVertex3f(100,-50,-50);
+   glEnd();
+//BAWAH KIRI
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(-100,-50,50);
+   glVertex3f(-100,-80,50);
+   glVertex3f(-100,-80,-50);
+   glVertex3f(-100,-50,-50);
+   glEnd();
+//BAWAH BELAKANG
+   glBegin(GL_POLYGON);
+   glColor3f(0.97,0,0);
+   glVertex3f(100,-50,-50);
+   glVertex3f(100,-80,-50);
+   glVertex3f(-100,-80,-50);
+   glVertex3f(-100,-50,-50);
+   glEnd();
 
 //HOLBED JOSHUA PETTY - 672018260
 
