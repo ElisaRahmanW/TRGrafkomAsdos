@@ -2867,6 +2867,210 @@ glBegin(GL_POLYGON);
    glVertex3f(-60,121.6,-28);
    glEnd();
 	
+//########################################################################################################################################
+//OBJEK
+//########################################################################################################################################
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//PAPAN TULIS
+   glBegin(GL_POLYGON);
+   glColor3f(1,1,0.3);
+   glVertex3f(10,-10,-49);
+   glVertex3f(-10,-10,-49);
+   glVertex3f(-10,-30,-49);
+   glVertex3f(10,-30,-49);
+   glEnd();
+   glBegin(GL_POLYGON);
+   glColor3f(0.2,1,0.2);
+   glVertex3f(9,-11,-48.9);
+   glVertex3f(-9,-11,-48.9);
+   glVertex3f(-9,-29,-48.9);
+   glVertex3f(9,-29,-48.9);
+   glEnd();
+
+//TONG SAMPAH
+   glBegin(GL_POLYGON);
+   glColor3f(1,1,1);
+   glVertex3f(208,-79,160);
+   glVertex3f(212,-79,160);
+   glVertex3f(214,-79,158);
+   glVertex3f(214,-79,156);
+   glVertex3f(212,-79,154);
+   glVertex3f(208,-79,154);
+   glVertex3f(206,-79,156);
+   glVertex3f(206,-79,158);
+   glEnd();
+
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.4,0.4);
+   glVertex3f(208,-79,160);
+   glVertex3f(212,-79,160);
+   glVertex3f(212,-65,160);
+   glVertex3f(208,-65,160);
+    glEnd();
+
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.4,0.4);
+   glVertex3f(212,-79,160);
+   glVertex3f(214,-79,158);
+   glVertex3f(214,-65,158);
+   glVertex3f(212,-65,160);
+     glEnd();
+
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.4,0.4);
+   glVertex3f(214,-79,158);
+   glVertex3f(214,-79,156);
+   glVertex3f(214,-65,156);
+   glVertex3f(214,-65,158);
+    glEnd();
+
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.4,0.4);
+   glVertex3f(214,-79,156);
+   glVertex3f(212,-79,154);
+   glVertex3f(212,-65,154);
+   glVertex3f(214,-65,156);
+    glEnd();
+
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.4,0.4);
+   glVertex3f(212,-79,154);
+   glVertex3f(208,-79,154);
+   glVertex3f(208,-65,154);
+   glVertex3f(212,-65,154);
+    glEnd();
+
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.4,0.4);
+   glVertex3f(208,-79,154);
+   glVertex3f(206,-79,156);
+   glVertex3f(206,-65,156);
+   glVertex3f(208,-65,154);
+    glEnd();
+
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.4,0.4);
+   glVertex3f(206,-79,156);
+   glVertex3f(206,-79,158);
+   glVertex3f(206,-65,158);
+   glVertex3f(206,-65,156);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+   glColor3f(1,0.4,0.4);
+   glVertex3f(208,-79,160);
+   glVertex3f(206,-79,158);
+   glVertex3f(206,-65,158);
+   glVertex3f(208,-65,160);
+    glEnd();
+
+
+
+//MEJA
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.8,0.3);
+   glVertex3f(10,-40,-40);
+   glVertex3f(-10,-40,-40);
+   glVertex3f(-10,-40,-30);
+   glVertex3f(10,-40,-30);
+   glEnd();
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.8,0.3);
+   glVertex3f(10,-40,-40);
+   glVertex3f(10,-50,-40);
+   glVertex3f(10,-50,-30);
+   glVertex3f(10,-40,-30);
+   glEnd();
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.8,0.3);
+   glVertex3f(-10,-40,-40);
+   glVertex3f(-10,-50,-40);
+   glVertex3f(-10,-50,-30);
+   glVertex3f(-10,-40,-30);
+   glEnd();
+//KURSI
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.7,0.3);
+   glVertex3f(3,-40,-20);
+   glVertex3f(-3,-40,-20);
+   glVertex3f(-3,-40,-15);
+   glVertex3f(3,-40,-15);
+   glEnd();
+   //KAKI KURSI
+   //KANAN
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.8,0.3);
+   glVertex3f(3,-40,-20);
+   glVertex3f(3,-50,-20);
+   glVertex3f(3,-50,-15);
+   glVertex3f(3,-40,-15);
+   glEnd();
+   glBegin(GL_POLYGON);
+   glColor3f(0.8,0.8,0.8);
+   glVertex3f(3.1,-42,-19);
+   glVertex3f(3.1,-50,-19);
+   glVertex3f(3.1,-50,-16);
+   glVertex3f(3.1,-42,-16);
+   glEnd();
+   //KIRI
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.8,0.3);
+   glVertex3f(-3,-40,-20);
+   glVertex3f(-3,-50,-20);
+   glVertex3f(-3,-50,-15);
+   glVertex3f(-3,-40,-15);
+   glEnd();
+   glBegin(GL_POLYGON);
+   glColor3f(0.8,0.8,0.8);
+   glVertex3f(-3.1,-42,-19);
+   glVertex3f(-3.1,-50,-19);
+   glVertex3f(-3.1,-50,-16);
+   glVertex3f(-3.1,-42,-16);
+   glEnd();
+
+   glBegin(GL_POLYGON);
+   glColor3f(1,0.8,0.3);
+   glVertex3f(3,-30,-15);
+   glVertex3f(-3,-30,-15);
+   glVertex3f(-3,-40,-15);
+   glVertex3f(3,-40,-15);
+   glEnd();
+
+//JAM DINDING
+ glBegin(GL_POLYGON);
+   glColor3f(1,1,1);
+   glVertex3f(8,10,-49);
+   glVertex3f(12,10,-49);
+   glVertex3f(14,8,-49);
+   glVertex3f(14,6,-49);
+   glVertex3f(12,4,-49);
+   glVertex3f(8,4,-49);
+   glVertex3f(6,6,-49);
+   glVertex3f(6,8,-49);
+   glEnd();
+   glBegin(GL_LINE_LOOP);
+   glColor3f(0,0,0);
+   glVertex3f(8,10,-48.9);
+   glVertex3f(12,10,-48.9);
+   glVertex3f(14,8,-48.9);
+   glVertex3f(14,6,-48.9);
+   glVertex3f(12,4,-48.9);
+   glVertex3f(8,4,-48.9);
+   glVertex3f(6,6,-48.9);
+   glVertex3f(6,8,-48.9);
+   glEnd();
+
+   glBegin(GL_LINES);
+   glColor3f(0,0,0);
+   glVertex3f(10,9,-48.9);
+   glVertex3f(10,7,-48.9);
+   glEnd();
+   glBegin(GL_LINES);
+   glColor3f(0,0,0);
+   glVertex3f(7,7,-48.9);
+   glVertex3f(10,7,-48.9);
+   glEnd();
+	
 	
 
 //HOLBED JOSHUA PETTY - 672018260
